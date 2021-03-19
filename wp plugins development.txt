@@ -1,0 +1,8 @@
+<?php
+/*
+plugin name: aftab
+*/
+function aftab(){
+	echo "<marquee>Aftab is a good person.</marquee>";
+}
+add_action('admin_head','aftab');
