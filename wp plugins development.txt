@@ -17,8 +17,8 @@
  */
  
  *
-
-
+wp_enqueue_style( string $handle, string $src = '', string[] $deps = array(), string|bool|null $ver = false, string $media = 'all' )
+wp_enqueue_script( string $handle, string $src = '', string[] $deps = array(), string|bool|null $ver = false, bool $in_footer = false )
 <?php
 /*
 plugin name: aftab
