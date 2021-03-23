@@ -1,3 +1,31 @@
+=======================================
+//Cusrtom post type
+<?php 
+/* Plugin Name: palak Cusrtom post type
+Plugin URI: http://palak-online.com/plugins 
+Description: This is a demo description. 
+Version: 1.0
+
+Author: Md. kazi aftabur rahman
+Author URI: http://aftab-online.com 
+*/ 
+function aftab_custom_post_type(){
+register_post_type('afpost',array(
+          'labels'     => array(
+            'name'       =>__('Books','textdomain'),
+            'singular_name'=>__('Book','textdomain'),
+          ),
+          'public' => true,
+          'has_archive'=> true,
+));
+
+}
+add_action('init','aftab_custom_post_type');
+
+
+?>
+
+=========================================================
 * create folder in plugin
 * create file
 * css,js folder
