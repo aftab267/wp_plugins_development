@@ -17,6 +17,7 @@ register_post_type('afpost',array(
           ),
           'public' => true,
           'has_archive'=> true,
+	  'supports'    => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
 ));
 
 }
